@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chai aur code </title>
+</head>
+<body>
+    <script>
+        const div = document.createElement('div')
+        console.log(div);
+        div.className = "main";
+        div.id = Math.round( Math.random() * 10 + 1);
+        div.setAttribute("title", "genrated title")
+        div.style.backgroundColor = "blue";
+    
+        div.style.padding = "50px";
+        div.innerText = "code with ayush ";
+        const addText = document.createTextNode("code with ayush")
+        div.appendChild(addText)
+        document.body.appendChild(div);
+
+
+    </script>
+    
+</body>
+</html>

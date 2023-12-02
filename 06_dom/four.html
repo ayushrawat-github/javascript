@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODE with AYUSH  DOM </title>
+</head>
+<body style="background-color: black; color: blanchedalmond;">
+    <ul class=" language">
+        <li>javascript</li>
+        <li>html</li>
+        <li>vansh</li>
+        <li>arav</li>
+        <li>ayush</li>
+    </ul>
+
+    
+</body>
+<script>
+    function addlanguage(language){
+        const li = document.createElement('li')
+        li.innerHTML= `${language}`
+        document.querySelector('.language')
+        document.querySelector('.language').appendChild(li)
+
+    }
+     addlanguage("css");
+     addlanguage("python");
+    function addoptilanguage(langname){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langname))
+        document.querySelector('.language').appendChild(li)
+    }
+
+    
+    addoptilanguage("golang")
+
+</script>
+</html>
